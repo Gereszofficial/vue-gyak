@@ -1,0 +1,50 @@
+/* Minimal Bootstrap-like stylesheet (subset) for the exam task.
+   This is NOT the full Bootstrap distribution, but provides the classes used in index.html. */
+
+:root{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+}
+
+*{ box-sizing:border-box; }
+
+img{ max-width:100%; height:auto; }
+
+.container{ width:100%; padding-right:calc(var(--bs-gutter-x)*.5); padding-left:calc(var(--bs-gutter-x)*.5); margin-right:auto; margin-left:auto; }
+@media (min-width:576px){ .container{ max-width:540px; } }
+@media (min-width:768px){ .container{ max-width:720px; } }
+@media (min-width:992px){ .container{ max-width:960px; } }
+@media (min-width:1200px){ .container{ max-width:1140px; } }
+
+.row{ display:flex; flex-wrap:wrap; margin-top:calc(var(--bs-gutter-y) * -1); margin-right:calc(var(--bs-gutter-x)*-.5); margin-left:calc(var(--bs-gutter-x)*-.5); }
+.row > *{ flex-shrink:0; width:100%; max-width:100%; padding-right:calc(var(--bs-gutter-x)*.5); padding-left:calc(var(--bs-gutter-x)*.5); margin-top:var(--bs-gutter-y); }
+
+.col-12{ flex:0 0 auto; width:100%; }
+@media (min-width:768px){
+  .col-md-6{ flex:0 0 auto; width:50%; }
+}
+@media (min-width:992px){
+  .col-lg-6{ flex:0 0 auto; width:50%; }
+  .col-lg-3{ flex:0 0 auto; width:25%; }
+}
+
+.g-4{ --bs-gutter-x:1.5rem; --bs-gutter-y:1.5rem; }
+
+.img-fluid{ max-width:100%; height:auto; }
+.d-block{ display:block !important; }
+.mx-auto{ margin-left:auto !important; margin-right:auto !important; }
+
+.rounded-5{ border-radius:1.25rem !important; }
+
+.card{ position:relative; display:flex; flex-direction:column; min-width:0; word-wrap:break-word; background-color:#fff; background-clip:border-box; border:1px solid rgba(0,0,0,.125); border-radius:.75rem; height:100%; }
+.card-img-top{ width:100%; border-top-left-radius:calc(.75rem - 1px); border-top-right-radius:calc(.75rem - 1px); }
+.card-body{ flex:1 1 auto; padding:1rem; }
+.card-title{ margin-bottom:.5rem; font-weight:700; }
+.card-text{ margin-top:0; margin-bottom:1rem; }
+
+.table-responsive{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.table{ width:100%; margin-bottom:1rem; color:#212529; border-collapse:collapse; }
+.table > :not(caption) > * > *{ padding:.5rem .5rem; border-bottom:1px solid rgba(0,0,0,.1); }
+.table-dark{ color:#fff; background-color:#212529; }
+.table-dark > :not(caption) > * > *{ border-bottom-color: rgba(255,255,255,.15); }
+.table-dark thead th{ border-bottom-color: rgba(255,255,255,.25); }
