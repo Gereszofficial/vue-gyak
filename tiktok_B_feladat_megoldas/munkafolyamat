@@ -1,0 +1,127 @@
+Munkafolyamat leírás (hogyan készítettem el)
+
+Projektmappa létrehozása
+
+Létrehoztam egy új mappát a feladatnak (pl. B_feladat).
+
+Ezen belül elkészítettem a szükséges almappákat:
+
+css/ a saját stíluslaphoz
+
+img/ a képekhez
+
+Alap HTML fájl elkészítése
+
+Készítettem egy index.html fájlt.
+
+Beállítottam az alap HTML szerkezetet:
+
+<!doctype html>, lang="hu", meta charset="utf-8", meta viewport (reszponzivitás miatt).
+
+Adtam az oldalnak címet (<title>).
+
+Bootstrap csatlakoztatása (CDN)
+
+A feladatnak megfelelően a Bootstrap keretrendszert CDN linken keresztül csatlakoztattam a <head> részben.
+
+Figyeltem arra, hogy a Bootstrap betöltése biztosítja az alap reszponzív rácsrendszert (grid), táblázat és kártya stílusokat.
+
+Saját CSS fájl hozzáadása
+
+Létrehoztam a css/style.css fájlt.
+
+A style.css-t a Bootstrap után linkeltem be, hogy a saját beállításaim felülírják a Bootstrap alap stílusait, ahol kell.
+
+Háttér és középső tartalom (main) kialakítása
+
+A body-ra beállítottam a háttérmintát (background-image), valamint sötét alap hátteret.
+
+Létrehoztam egy központi tartalmi részt <main> elemmel.
+
+A fő tartalom dobozra beállítottam:
+
+80% szélesség
+
+középre igazítás (margin: 0 auto)
+
+25px belső margó (padding: 25px)
+
+enyhén átlátszó fekete hátteret, hogy jól olvasható legyen a szöveg a mintás háttéren.
+
+Fejléc: cím + leírás + linkek
+
+Elkészítettem az oldal tetején a TikTok címet és egy rövid bemutató szöveget.
+
+A TikTok szót linkké tettem (<a>), és CSS-ben beállítottam:
+
+normál link színt
+
+hover (rámutatás) esetén eltérő színt és/vagy aláhúzást
+
+Kép beszúrása
+
+Beszúrtam a feladatnak megfelelő nagy képet az oldal közepére (<img>).
+
+Bootstrap img-fluid osztályt használtam, hogy minden kijelzőn arányosan méreteződjön.
+
+Tartalmi blokkok és alcímek
+
+A leíró részeket bekezdésekbe (<p>) rendeztem.
+
+A fő tartalmakat alcímekkel tagoltam (<h2>), hogy áttekinthető legyen.
+
+Felsorolás elkészítése
+
+Létrehoztam egy felsorolást a „Népszerű használati módok” részhez.
+
+A felsorolást listában oldottam meg (<ol> vagy <ul>), és CSS-ben finomítottam a behúzást/térközt.
+
+Táblázat (Betiltások) Bootstrap segítségével
+
+Elkészítettem a táblázatot <table> elemmel.
+
+Bootstrap osztályokat használtam, hogy megfeleljen a követelményeknek:
+
+table
+
+table-dark
+
+table-responsive (mobilon görgethető legyen, ne törjön szét)
+
+A táblázatba fejlécet (<thead>) és törzset (<tbody>) raktam.
+
+Kártyák (4 db) reszponzívan
+
+A négy “influencer” blokkot Bootstrap grid rendszerrel csináltam meg:
+
+mobilon 1 oszlop (col-12)
+
+közepes kijelzőn 2 oszlop (col-md-6)
+
+nagy kijelzőn 4 oszlop (col-lg-3)
+
+Mind a négy elemnél Bootstrap card komponenst használtam:
+
+card, card-img-top, card-body, card-title, card-text
+
+CSS-ben sötét témához igazítottam a kártyákat (háttér, szöveg, keret), és fixebb képmegjelenítést adtam (object-fit: cover).
+
+Reszponzivitás finomhangolása
+
+Ellenőriztem különböző méreteken (mobil / tablet / desktop).
+
+Készítettem egy @media szabályt, hogy kisebb kijelzőn:
+
+a main szélessége nagyobb legyen (pl. 95%)
+
+a padding csökkenjen
+
+a képek ne legyenek túl nagyok
+
+Validálás és ellenőrzés
+
+Ellenőriztem, hogy a HTML szerkezet szabályos legyen (tag-ek lezárva, hierarchia jó).
+
+Figyeltem arra, hogy minden képnek legyen alt szövege.
+
+Megnéztem, hogy a linkek működnek, a táblázat nem csúszik szét és a kártyák szépen törnek reszponzívan.
